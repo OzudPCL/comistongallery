@@ -3,10 +3,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .container {
@@ -16,9 +12,9 @@ body {
     border: 1px solid #ddd;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    width: 90%;
-    max-width: 1200px;
-    height: 80vh;
+    margin: 20px auto;
+    width: 85%; /* Reduced width to 85% */
+    max-width: 1500px; /* Reduced max width slightly */
 }
 
 .button-panel {
@@ -27,13 +23,12 @@ body {
     padding: 10px;
     background: #f9f9f9;
     border-right: 1px solid #ddd;
-    width: 20%;
-    box-sizing: border-box;
+    width: 17%; /* Adjusted to 17% for better balance */
 }
 
 .button-panel button {
     margin-bottom: 10px;
-    padding: 10px 20px;
+    padding: 12px 24px; /* Retained previous padding */
     background-color: #007bff;
     color: white;
     border: none;
@@ -48,23 +43,23 @@ body {
 
 .image-display {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-grow: 1;
     padding: 20px;
-    box-sizing: border-box;
+    width: 83%; /* Reduced width to match container adjustment */
 }
 
 .image-display img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 100%; /* Retain full container width scaling */
+    max-height: 750px; /* Reduced height slightly */
     border-radius: 5px;
     object-fit: contain;
+    margin-bottom: 10px;
 }
 
 .image-display a {
     position: relative;
-    text-decoration: none;
 }
 
 .image-display a:hover::after {
